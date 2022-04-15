@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Nav-bar */
+header {
+	position: fixed;
+	display: flex;
+	min-height: 5rem;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: solid rgb(255, 0, 0);
+	background-color: #22446e;
+}
+
+.logo {
+	width: 5%;
+	margin-left: 3rem;
+}
+
+.nav-links {
+	width: 35vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	text-decoration: none;
+	margin: 0 3rem;
+	font-weight: 400;
+}
+
+/* Super Features */
+
+.features-section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 40%;
+	border: solid red;
+	justify-content: center;
+	padding: 5rem 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
+		url('https://images.unsplash.com/photo-1544612247-a88f3e53edf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	background-repeat: repeat;
+	background-position: -13rem;
+	height: 40rem;
+	color: white;
+}
+
+.features-section > section {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 35%;
+	height: 10rem;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Features */
+.features {
+	border: solid rgb(0, 225, 255);
+}
+
+.imagen-barco {
+	border: solid black;
+}
+
+.imagen-barco > img {
+	width: 10%;
+}
+
+.features-barco {
+	background: url('https://images.unsplash.com/photo-1501771924607-209f42a6e7e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+	background-repeat: round;
+	height: 48rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	color: #000000;
+	row-gap: 2rem;
+}
+
+.features-barco > h2 {
+	font-size: 6rem;
+	padding-right: 3rem;
+}
+
+.features-barco > p {
+	padding-right: 1rem;
+	margin-bottom: 13rem;
+	width: 50ch;
+}
+
+/* OUR SHIP TYPES */
+.caracteristicas-section {
+	border: solid orange;
+	display: flex;
+	justify-content: space-evenly;
+	border: solid violet;
+	padding: 6rem 0;
+}
+
+.caracteristicas-section > .caracteristicas-bloque {
+	width: 30ch;
+	height: 30rem;
+	background-repeat: round;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.caracteristicas-bloque * {
+	flex-basis: 30%;
+	margin: 2rem;
+}
+
+/* OUR SHIP TYPES - IMAGES */
+.ship-1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
+		url('https://images.unsplash.com/photo-1534430476764-c1e0b96e1f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+	color: white;
+}
+
+.ship-2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
+		url('https://images.unsplash.com/photo-1638262306483-32b4be71fde8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80');
+	color: white;
+}
+
+.ship-3 {
+	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
+		url('https://images.unsplash.com/photo-1536846862558-b80d25f0dbae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+	color: white;
+}
+
+/* OUR HISTORY */
+.video-section {
+	border: solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 40rem;
+}
+
+.contact-form {
+	border: solid greenyellow;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 40rem;
+}
+
+.contact-form > section:first-child {
+	border: solid red;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.contact-form > section:first-child {
+	background: #22446e;
+}
+
+.contact-form > section > ul {
+	list-style: none;
+}
+
+.contact-form > section + section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border: solid rgb(141, 226, 43);
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
+		url('https://images.unsplash.com/photo-1529725008305-190bf3b23e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	/* background-position: 3rem; */
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 1rem;
+	margin-top: 5rem;
+	width: 70%;
+}
+
+form {
+	flex-basis: 48%;
+}
+
+.form h3 {
+	font-size: 2rem;
+	width: 100%;
+}
+
+.form > form input {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	resize: vertical;
+	min-height: 15rem;
+	max-height: 25rem;
+}
