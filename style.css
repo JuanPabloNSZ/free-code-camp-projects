@@ -7,7 +7,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
-/* Nav-bar */
+/* NAV-BAR */
 header {
 	position: fixed;
 	display: flex;
@@ -37,33 +37,7 @@ header {
 	font-weight: 400;
 }
 
-/* Super Features */
-
-.features-section {
-	display: flex;
-	flex-wrap: wrap;
-	flex-basis: 40%;
-	border: solid red;
-	justify-content: center;
-	padding: 5rem 0;
-	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
-		url('https://images.unsplash.com/photo-1544612247-a88f3e53edf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-	background-repeat: repeat;
-	background-position: -13rem;
-	height: 40rem;
-	color: white;
-}
-
-.features-section > section {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 35%;
-	height: 10rem;
-	align-items: center;
-	justify-content: center;
-}
-
-/* Features */
+/* MAIN */
 .features {
 	border: solid rgb(0, 225, 255);
 }
@@ -119,13 +93,13 @@ header {
 }
 
 .caracteristicas-bloque * {
-	flex-basis: 30%;
-	margin: 2rem;
+	margin: 2rem 0;
+	line-height: 1.8;
 }
 
 /* OUR SHIP TYPES - IMAGES */
 .ship-1 {
-	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
+	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(105, 123, 204, 0.637)),
 		url('https://images.unsplash.com/photo-1534430476764-c1e0b96e1f0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
 	color: white;
 }
@@ -142,6 +116,39 @@ header {
 	color: white;
 }
 
+/* FEATURES */
+
+.features-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-evenly;
+	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
+		url('https://images.unsplash.com/photo-1544612247-a88f3e53edf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	background-repeat: repeat;
+	background-position: -13rem;
+	height: 45rem;
+	color: white;
+}
+
+.features-section > section {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 34%;
+	height: 15rem;
+	align-items: center;
+	justify-content: space-evenly;
+	line-height: 1.7;
+	border: 4px solid green;
+}
+
+.features-section span {
+	height: 7rem;
+	text-align: center;
+	margin: 0 3rem;
+}
+
 /* OUR HISTORY */
 .video-section {
 	border: solid black;
@@ -152,30 +159,47 @@ header {
 	height: 40rem;
 }
 
+/* CONTACT FORM */
+
 .contact-form {
-	border: solid greenyellow;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 40rem;
+	color: white;
 }
 
 .contact-form > section:first-child {
-	border: solid red;
 	width: 50%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	background: #22446e;
 }
 
-.contact-form > section:first-child {
-	background: #22446e;
+.contact-form > section > h3 {
+	font-size: 1.75rem;
+	padding-top: 2rem;
+}
+
+.contact-form > section > p {
+	padding: 2rem 4rem;
+	font-size: 1.5rem;
+	text-align: center;
 }
 
 .contact-form > section > ul {
 	list-style: none;
+	padding: 0;
+	font-size: 1.25rem;
+	padding: 0 3rem;
+	text-align: center;
+}
+
+.contact-form > section li {
+	padding: 1rem 3rem;
 }
 
 .contact-form > section + section {
@@ -184,7 +208,6 @@ header {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	border: solid rgb(141, 226, 43);
 	height: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(14, 45, 185, 0.637)),
 		url('https://images.unsplash.com/photo-1529725008305-190bf3b23e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
@@ -206,6 +229,7 @@ form {
 
 .form h3 {
 	font-size: 2rem;
+	padding-bottom: 1rem;
 	width: 100%;
 }
 
@@ -217,5 +241,5 @@ textarea {
 	width: 100%;
 	resize: vertical;
 	min-height: 15rem;
-	max-height: 25rem;
+	max-height: 21rem;
 }
