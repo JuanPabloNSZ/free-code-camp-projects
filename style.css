@@ -237,9 +237,9 @@ form {
 	width: 100%;
 }
 
-textarea {
+/* textarea {
 	width: 100%;
 	resize: vertical;
 	min-height: 15rem;
-	max-height: 21rem;
+	max-height: 21rem; */
 }
