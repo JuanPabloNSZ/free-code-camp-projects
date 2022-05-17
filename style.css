@@ -16,7 +16,6 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border: solid rgb(255, 0, 0);
 	background-color: #22446e;
 }
 
@@ -32,9 +31,13 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	list-style: none;
-	text-decoration: none;
 	margin: 0 3rem;
 	font-weight: 400;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
 }
 
 /* MAIN */
@@ -237,9 +240,9 @@ form {
 	width: 100%;
 }
 
-/* textarea {
+textarea {
 	width: 100%;
 	resize: vertical;
 	min-height: 15rem;
-	max-height: 21rem; */
+	max-height: 21rem;
 }
